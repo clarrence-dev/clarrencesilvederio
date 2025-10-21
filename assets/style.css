@@ -183,11 +183,8 @@ body {
 
 /* Skills Section */
 .skills {
-  background: radial-gradient(circle at center, #070710 0%, #000 100%);
-  color: #fff;
   text-align: center;
   padding: 100px 5%;
-  scroll-snap-align: start;
 }
 
 .skills h2 {
