@@ -1,5 +1,17 @@
- // Smooth scroll (optional for browsers that don’t support CSS scroll-behavior)
-    document.querySelector('.arrow').addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const arrow = document.querySelector(".arrow");
+  
+    if (arrow) {
+      arrow.addEventListener("click", (e) => {
+        e.preventDefault();
+        const target = document.querySelector(arrow.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+    }
+  });
+  
