@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe | Portfolio</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Full-screen hero section */
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #0b0d17 0%, #070710 100%);
+      color: #ccc;
+      overflow: hidden;
+    }
+
+    /* Gradient name text */
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #5c7cfa, #a463f2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Subtitle */
+    p {
+      font-size: 0.95rem;
+      color: #aaa;
+    }
+
+    /* Down arrow */
+    .arrow {
+      position: absolute;
+      bottom: 40px;
+      font-size: 1.5rem;
+      color: #888;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(10px);
+      }
+      60% {
+        transform: translateY(5px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Clarrence Silvederio</h1>
+    <p>Full Stack Developer &amp; UI/UX Enthusiast</p>
+  </div>
+  <div class="arrow">↓</div>
+</body>
+</html>
